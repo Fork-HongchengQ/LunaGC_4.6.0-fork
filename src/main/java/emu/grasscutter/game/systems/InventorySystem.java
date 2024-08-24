@@ -460,9 +460,18 @@ public class InventorySystem extends BaseGameSystem {
         return leftoverOreList;
     }
 
-    public void refineWeapon(Player player, long targetGuid, long feedGuid) {
+    public void refineWeapon(Player player, long targetGuid, List<Long> feedGuid) {
+
+        long feedGuidOut = 0;
+
+        if (!feedGuid.isEmpty()) {
+            // int num = feedGuid.size();
+            // 获取第一个元素
+            feedGuidOut = feedGuid.get(0); // 转换为 long 类型
+        } // 官服是list 但是由于这里GC老代码涉及的地方太多所以只计算数组第一个 也就是玩家一次性只能放入一个精炼武器
+
         GameItem weapon = player.getInventory().getItemByGuid(targetGuid);
-        GameItem feed = player.getInventory().getItemByGuid(feedGuid);
+        GameItem feed = player.getInventory().getItemByGuid(feedGuidOut);
 
         // Sanity checks
         if (weapon == null || feed == null || !feed.isDestroyable()) {

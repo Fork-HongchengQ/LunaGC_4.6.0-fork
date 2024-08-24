@@ -19,13 +19,13 @@ public final class AiSyncInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool has_path_to_target = 3;</code>
+     * <code>bool has_path_to_target = 9;</code>
      * @return The hasPathToTarget.
      */
     boolean getHasPathToTarget();
 
     /**
-     * <code>bool is_self_killing = 9;</code>
+     * <code>bool is_self_killing = 3;</code>
      * @return The isSelfKilling.
      */
     boolean getIsSelfKilling();
@@ -37,11 +37,6 @@ public final class AiSyncInfoOuterClass {
     int getEntityId();
   }
   /**
-   * <pre>
-   * 4.6.0
-   * Obf: OPOPDLFAGAO
-   * </pre>
-   *
    * Protobuf type {@code AiSyncInfo}
    */
   public static final class AiSyncInfo extends
@@ -56,14 +51,14 @@ public final class AiSyncInfoOuterClass {
     private AiSyncInfo() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new AiSyncInfo();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -74,7 +69,7 @@ public final class AiSyncInfoOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -88,12 +83,12 @@ public final class AiSyncInfoOuterClass {
               break;
             case 24: {
 
-              hasPathToTarget_ = input.readBool();
+              isSelfKilling_ = input.readBool();
               break;
             }
             case 72: {
 
-              isSelfKilling_ = input.readBool();
+              hasPathToTarget_ = input.readBool();
               break;
             }
             case 96: {
@@ -122,35 +117,35 @@ public final class AiSyncInfoOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return emu.grasscutter.net.proto.AiSyncInfoOuterClass.internal_static_AiSyncInfo_descriptor;
+      return AiSyncInfoOuterClass.internal_static_AiSyncInfo_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return emu.grasscutter.net.proto.AiSyncInfoOuterClass.internal_static_AiSyncInfo_fieldAccessorTable
+      return AiSyncInfoOuterClass.internal_static_AiSyncInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.class, emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.Builder.class);
+              AiSyncInfo.class, Builder.class);
     }
 
-    public static final int HAS_PATH_TO_TARGET_FIELD_NUMBER = 3;
+    public static final int HAS_PATH_TO_TARGET_FIELD_NUMBER = 9;
     private boolean hasPathToTarget_;
     /**
-     * <code>bool has_path_to_target = 3;</code>
+     * <code>bool has_path_to_target = 9;</code>
      * @return The hasPathToTarget.
      */
-    @java.lang.Override
+    @Override
     public boolean getHasPathToTarget() {
       return hasPathToTarget_;
     }
 
-    public static final int IS_SELF_KILLING_FIELD_NUMBER = 9;
+    public static final int IS_SELF_KILLING_FIELD_NUMBER = 3;
     private boolean isSelfKilling_;
     /**
-     * <code>bool is_self_killing = 9;</code>
+     * <code>bool is_self_killing = 3;</code>
      * @return The isSelfKilling.
      */
-    @java.lang.Override
+    @Override
     public boolean getIsSelfKilling() {
       return isSelfKilling_;
     }
@@ -161,13 +156,13 @@ public final class AiSyncInfoOuterClass {
      * <code>uint32 entity_id = 12;</code>
      * @return The entityId.
      */
-    @java.lang.Override
+    @Override
     public int getEntityId() {
       return entityId_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -177,14 +172,14 @@ public final class AiSyncInfoOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hasPathToTarget_ != false) {
-        output.writeBool(3, hasPathToTarget_);
-      }
       if (isSelfKilling_ != false) {
-        output.writeBool(9, isSelfKilling_);
+        output.writeBool(3, isSelfKilling_);
+      }
+      if (hasPathToTarget_ != false) {
+        output.writeBool(9, hasPathToTarget_);
       }
       if (entityId_ != 0) {
         output.writeUInt32(12, entityId_);
@@ -192,19 +187,19 @@ public final class AiSyncInfoOuterClass {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
 
       size = 0;
-      if (hasPathToTarget_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, hasPathToTarget_);
-      }
       if (isSelfKilling_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isSelfKilling_);
+          .computeBoolSize(3, isSelfKilling_);
+      }
+      if (hasPathToTarget_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, hasPathToTarget_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -215,15 +210,15 @@ public final class AiSyncInfoOuterClass {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo)) {
+      if (!(obj instanceof AiSyncInfo)) {
         return super.equals(obj);
       }
-      emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo other = (emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo) obj;
+      AiSyncInfo other = (AiSyncInfo) obj;
 
       if (getHasPathToTarget()
           != other.getHasPathToTarget()) return false;
@@ -235,7 +230,7 @@ public final class AiSyncInfoOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -255,69 +250,69 @@ public final class AiSyncInfoOuterClass {
       return hash;
     }
 
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(
+    public static AiSyncInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(
+    public static AiSyncInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(
+    public static AiSyncInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(
+    public static AiSyncInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(byte[] data)
+    public static AiSyncInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(
+    public static AiSyncInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(java.io.InputStream input)
+    public static AiSyncInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(
+    public static AiSyncInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseDelimitedFrom(java.io.InputStream input)
+    public static AiSyncInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseDelimitedFrom(
+    public static AiSyncInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(
+    public static AiSyncInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parseFrom(
+    public static AiSyncInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -325,49 +320,44 @@ public final class AiSyncInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo prototype) {
+    public static Builder newBuilder(AiSyncInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
     /**
-     * <pre>
-     * 4.6.0
-     * Obf: OPOPDLFAGAO
-     * </pre>
-     *
      * Protobuf type {@code AiSyncInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:AiSyncInfo)
-        emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfoOrBuilder {
+        AiSyncInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return emu.grasscutter.net.proto.AiSyncInfoOuterClass.internal_static_AiSyncInfo_descriptor;
+        return AiSyncInfoOuterClass.internal_static_AiSyncInfo_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return emu.grasscutter.net.proto.AiSyncInfoOuterClass.internal_static_AiSyncInfo_fieldAccessorTable
+        return AiSyncInfoOuterClass.internal_static_AiSyncInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.class, emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.Builder.class);
+                AiSyncInfo.class, Builder.class);
       }
 
       // Construct using emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.newBuilder()
@@ -376,7 +366,7 @@ public final class AiSyncInfoOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -385,7 +375,7 @@ public final class AiSyncInfoOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         hasPathToTarget_ = false;
@@ -397,29 +387,29 @@ public final class AiSyncInfoOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return emu.grasscutter.net.proto.AiSyncInfoOuterClass.internal_static_AiSyncInfo_descriptor;
+        return AiSyncInfoOuterClass.internal_static_AiSyncInfo_descriptor;
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo getDefaultInstanceForType() {
-        return emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.getDefaultInstance();
+      @Override
+      public AiSyncInfo getDefaultInstanceForType() {
+        return AiSyncInfo.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo build() {
-        emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo result = buildPartial();
+      @Override
+      public AiSyncInfo build() {
+        AiSyncInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo buildPartial() {
-        emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo result = new emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo(this);
+      @Override
+      public AiSyncInfo buildPartial() {
+        AiSyncInfo result = new AiSyncInfo(this);
         result.hasPathToTarget_ = hasPathToTarget_;
         result.isSelfKilling_ = isSelfKilling_;
         result.entityId_ = entityId_;
@@ -427,50 +417,50 @@ public final class AiSyncInfoOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo) {
-          return mergeFrom((emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo)other);
+        if (other instanceof AiSyncInfo) {
+          return mergeFrom((AiSyncInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo other) {
-        if (other == emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(AiSyncInfo other) {
+        if (other == AiSyncInfo.getDefaultInstance()) return this;
         if (other.getHasPathToTarget() != false) {
           setHasPathToTarget(other.getHasPathToTarget());
         }
@@ -485,21 +475,21 @@ public final class AiSyncInfoOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo parsedMessage = null;
+        AiSyncInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo) e.getUnfinishedMessage();
+          parsedMessage = (AiSyncInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -511,30 +501,30 @@ public final class AiSyncInfoOuterClass {
 
       private boolean hasPathToTarget_ ;
       /**
-       * <code>bool has_path_to_target = 3;</code>
+       * <code>bool has_path_to_target = 9;</code>
        * @return The hasPathToTarget.
        */
-      @java.lang.Override
+      @Override
       public boolean getHasPathToTarget() {
         return hasPathToTarget_;
       }
       /**
-       * <code>bool has_path_to_target = 3;</code>
+       * <code>bool has_path_to_target = 9;</code>
        * @param value The hasPathToTarget to set.
        * @return This builder for chaining.
        */
       public Builder setHasPathToTarget(boolean value) {
-        
+
         hasPathToTarget_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool has_path_to_target = 3;</code>
+       * <code>bool has_path_to_target = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearHasPathToTarget() {
-        
+
         hasPathToTarget_ = false;
         onChanged();
         return this;
@@ -542,30 +532,30 @@ public final class AiSyncInfoOuterClass {
 
       private boolean isSelfKilling_ ;
       /**
-       * <code>bool is_self_killing = 9;</code>
+       * <code>bool is_self_killing = 3;</code>
        * @return The isSelfKilling.
        */
-      @java.lang.Override
+      @Override
       public boolean getIsSelfKilling() {
         return isSelfKilling_;
       }
       /**
-       * <code>bool is_self_killing = 9;</code>
+       * <code>bool is_self_killing = 3;</code>
        * @param value The isSelfKilling to set.
        * @return This builder for chaining.
        */
       public Builder setIsSelfKilling(boolean value) {
-        
+
         isSelfKilling_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_self_killing = 9;</code>
+       * <code>bool is_self_killing = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSelfKilling() {
-        
+
         isSelfKilling_ = false;
         onChanged();
         return this;
@@ -576,7 +566,7 @@ public final class AiSyncInfoOuterClass {
        * <code>uint32 entity_id = 12;</code>
        * @return The entityId.
        */
-      @java.lang.Override
+      @Override
       public int getEntityId() {
         return entityId_;
       }
@@ -586,7 +576,7 @@ public final class AiSyncInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setEntityId(int value) {
-        
+
         entityId_ = value;
         onChanged();
         return this;
@@ -596,18 +586,18 @@ public final class AiSyncInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
-        
+
         entityId_ = 0;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -618,18 +608,18 @@ public final class AiSyncInfoOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:AiSyncInfo)
-    private static final emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo DEFAULT_INSTANCE;
+    private static final AiSyncInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo();
+      DEFAULT_INSTANCE = new AiSyncInfo();
     }
 
-    public static emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo getDefaultInstance() {
+    public static AiSyncInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<AiSyncInfo>
         PARSER = new com.google.protobuf.AbstractParser<AiSyncInfo>() {
-      @java.lang.Override
+      @Override
       public AiSyncInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -642,13 +632,13 @@ public final class AiSyncInfoOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<AiSyncInfo> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo getDefaultInstanceForType() {
+    @Override
+    public AiSyncInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -656,7 +646,7 @@ public final class AiSyncInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AiSyncInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AiSyncInfo_fieldAccessorTable;
 
@@ -667,10 +657,10 @@ public final class AiSyncInfoOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\020AiSyncInfo.proto\"T\n\nAiSyncInfo\022\032\n\022has_" +
-      "path_to_target\030\003 \001(\010\022\027\n\017is_self_killing\030" +
-      "\t \001(\010\022\021\n\tentity_id\030\014 \001(\rB\033\n\031emu.grasscut" +
+      "path_to_target\030\t \001(\010\022\027\n\017is_self_killing\030" +
+      "\003 \001(\010\022\021\n\tentity_id\030\014 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +672,7 @@ public final class AiSyncInfoOuterClass {
     internal_static_AiSyncInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AiSyncInfo_descriptor,
-        new java.lang.String[] { "HasPathToTarget", "IsSelfKilling", "EntityId", });
+        new String[] { "HasPathToTarget", "IsSelfKilling", "EntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

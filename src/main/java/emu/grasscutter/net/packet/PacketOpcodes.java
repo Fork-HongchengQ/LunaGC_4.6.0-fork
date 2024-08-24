@@ -4,7 +4,73 @@ public final class PacketOpcodes {
     // Empty
     public static final int NONE = 0;
 
-    // Opcodes     //4.6.0
+    /**
+     *  4.6
+     */
+
+    /* 零散的 */
+    public static final int AntiAddictNotify = 2448;    // 防沉迷弹窗
+    public static final int HitTreeNotify = 3983;   // 树枝击中通知
+    public static final int SceneKickPlayerReq = 9326;  // 联机 - 房主踢人
+    public static final int ServerDisconnectClientNotify = 28929;   // 客户端断开连接
+
+    /* 加好友 */
+    public static final int AskAddFriendReq = 3491;
+    public static final int AskAddFriendRsp = 4238;
+    public static final int AskAddFriendNotify = 4226;  // 4266 or 28106
+
+    /* 获取多人游戏列表 */
+    public static final int GetWorldMpInfoReq = 6890;
+    public static final int GetWorldMpInfoRsp = 28133;
+    public static final int GetOnlinePlayerListReq = 29620;
+    public static final int GetOnlinePlayerListRsp = 1995;
+
+    /* 联机 - 申请与进入世界 */
+    public static final int PlayerApplyEnterMpReq = 6551;
+    public static final int PlayerApplyEnterMpRsp = 21389;
+    public static final int PlayerApplyEnterMpNotify = 67;
+    public static final int PlayerApplyEnterMpResultReq = 25379;
+    public static final int PlayerApplyEnterMpResultRsp = 26899;
+    public static final int PlayerApplyEnterMpResultNotify = 9791;
+    public static final int WorldPlayerLocationNotify = 7462;
+
+    /* 联机 - 换人 */
+    public static final int ChangeMpTeamAvatarReq = 23126;
+    public static final int ChangeMpTeamAvatarRsp = 26144;
+
+    /* 联机 - 自己退队 */
+    public static final int PlayerGetForceQuitBanInfoReq = 5850;
+    public static final int PlayerGetForceQuitBanInfoRsp = 29909;
+
+    /* 武器精炼 */
+    public static final int WeaponAwakenReq = 28100;
+    public static final int WeaponAwakenRsp = 5123;
+
+    /* 死亡复活 */
+    public static final int WorldPlayerReviveReq = 23594;
+    public static final int WorldPlayerReviveRsp = 27091;   // 这里rsp就算不对也能正常工作
+
+    /* 合成台 */
+    public static final int CombineReq = 6317;
+    public static final int CombineRsp = 468;
+
+    /* 进入场景(小房间) */
+    public static final int PersonalSceneJumpReq = 22918;
+    public static final int PersonalSceneJumpRsp = 3192;
+
+    /* 任务 */
+    public static final int QuestDelNotify = 22841;     // test
+
+    /* 暂时不知道具体做什么用的 */
+    public static final int UnfreezeGroupLimitNotify = 1186;
+    public static final int DelTeamEntityNotify = 22627; // 这里cmdid大概率不对 proto也是
+    public static final int ClientAIStateNotify = 1712;
+
+
+
+
+
+    /* 4.6.0 LunaGC */
     public static final int GetPlayerTokenReq = 28960;//4.6.0
     public static final int GetPlayerTokenRsp = 4867;//4.6.0
     public static final int PlayerLoginReq = 27601;//4.6.0
@@ -136,8 +202,6 @@ public final class PacketOpcodes {
     public static final int AvatarUnlockTalentNotify = 23680;//4.6.0
     public static final int UnlockAvatarTalentReq = 4199;//4.6.0
     public static final int UnlockAvatarTalentRsp = 28618;//4.6.0
-    public static final int ChangeMpTeamAvatarReq = 23126;//4.6.0
-    public static final int ChangeMpTeamAvatarRsp = 26144;//4.6.0
     public static final int AvatarFightPropNotify = 9531;//4.6.0
     public static final int AvatarFightPropUpdateNotify = 21817;//4.6.0
     public static final int EntityFightPropChangeReasonNotify = 9207;//4.6.0
@@ -394,12 +458,6 @@ public final class PacketOpcodes {
     public static final int PlayerQuitDungeonRsp = 26503;//4.6.0
     public static final int DungeonDataNotify = 6799;//4.6.0
 
-
-
-
-
-
-
     // Opcodes     //4.0.0
     public static final int ACCKLIOPBHN = 399205;     //4.0.0
     public static final int PlayerEnterMapLayerNotify = 39926672;     //4.0.0
@@ -483,13 +541,9 @@ public final class PacketOpcodes {
     public static final int AnchorPointOpReq = 39923096;     //4.0.0
     public static final int AnchorPointOpRsp = 399726;     //4.0.0
     public static final int AnimatorForceSetAirMoveNotify = 39920049;     //4.0.0
-    public static final int AntiAddictNotify = 39923699;     //4.0.0
     public static final int AranaraCollectionDataNotify = 39921685;     //4.0.0
     public static final int AreaPlayInfoNotify = 39923472;     //4.0.0
     public static final int ArenaChallengeFinishNotify = 39920843;     //4.0.0
-    public static final int AskAddFriendNotify = 39927323;     //4.0.0
-    public static final int AskAddFriendReq = 3999257;     //4.0.0
-    public static final int AskAddFriendRsp = 3991146;     //4.0.0
     public static final int AssociateInferenceWordReq = 399701;     //4.0.0
     public static final int AssociateInferenceWordRsp = 39920449;     //4.0.0
     public static final int AsterLargeInfoNotify = 3998935;     //4.0.0
@@ -712,7 +766,6 @@ public final class PacketOpcodes {
     public static final int CityReputationDataNotify = 3998325;     //4.0.0
     public static final int CityReputationLevelupNotify = 39929784;     //4.0.0
     public static final int ClearRoguelikeCurseNotify = 3994898;     //4.0.0
-    public static final int ClientAIStateNotify = 3996944;     //4.0.0
     public static final int ClientAbilityInitBeginNotify = 3994046;     //4.0.0
     public static final int ClientBulletCreateNotify = 3994966;     //4.0.0
     public static final int ClientCollectorDataNotify = 39920387;     //4.0.0
@@ -742,8 +795,6 @@ public final class PacketOpcodes {
     public static final int CoinCollectPrepareStageNotify = 3992218;     //4.0.0
     public static final int CombineDataNotify = 3994969;     //4.0.0
     public static final int CombineFormulaDataNotify = 39925832;     //4.0.0
-    public static final int CombineReq = 399753;     //4.0.0
-    public static final int CombineRsp = 39927346;     //4.0.0
     public static final int CommonPlayerTipsNotify = 39927603;     //4.0.0
     public static final int CompoundDataNotify = 39925801;     //4.0.0
     public static final int CompoundUnlockNotify = 39929908;     //4.0.0
@@ -815,13 +866,12 @@ public final class PacketOpcodes {
     public static final int DelBackupAvatarTeamReq = 3999455;     //4.0.0
     public static final int DelBackupAvatarTeamRsp = 3993661;     //4.0.0
     public static final int DelScenePlayTeamEntityNotify = 3992438;     //4.0.0
-    public static final int DelTeamEntityNotify = 3994320;     //4.0.0
     public static final int DeleteFriendNotify = 39925517;     //4.0.0
     public static final int DeleteFriendReq = 3993037;     //4.0.0
     public static final int DeleteFriendRsp = 3999786;     //4.0.0
     public static final int DeshretObeliskChestInfoNotify = 39922407;     //4.0.0
     public static final int DestroyMassiveEntityNotify = 39924517;     //4.0.0
-    public static final int DestroyMaterialReq = 3996985;     //4.0.0
+    public static final int DestroyMaterialReq = 3996985;     //4.0.0 销毁材料
     public static final int DestroyMaterialRsp = 3997572;     //4.0.0
     public static final int DigActivityChangeGadgetStateReq = 3996858;     //4.0.0
     public static final int DigActivityChangeGadgetStateRsp = 39926496;     //4.0.0
@@ -1342,8 +1392,6 @@ public final class PacketOpcodes {
     public static final int GetNextResourceInfoRsp = 3999011;     //4.0.0
     public static final int GetOnlinePlayerInfoReq = 39921665;     //4.0.0
     public static final int GetOnlinePlayerInfoRsp = 3998759;     //4.0.0
-    public static final int GetOnlinePlayerListReq = 39927587;     //4.0.0
-    public static final int GetOnlinePlayerListRsp = 3991234;     //4.0.0
     public static final int GetOpActivityInfoReq = 39925823;     //4.0.0
     public static final int GetOpActivityInfoRsp = 39924674;     //4.0.0
     public static final int GetParentQuestVideoKeyReq = 39928598;     //4.0.0
@@ -1383,8 +1431,6 @@ public final class PacketOpcodes {
     public static final int GetUgcRsp = 39929873;     //4.0.0
     public static final int GetWidgetSlotReq = 39924304;     //4.0.0
     public static final int GetWidgetSlotRsp = 39928535;     //4.0.0
-    public static final int GetWorldMpInfoReq = 3996964;     //4.0.0
-    public static final int GetWorldMpInfoRsp = 3991461;     //4.0.0
     public static final int GiveUpRoguelikeDungeonCardReq = 3998630;     //4.0.0
     public static final int GiveUpRoguelikeDungeonCardRsp = 39928045;     //4.0.0
     public static final int GivingRecordChangeNotify = 39920863;     //4.0.0
@@ -1451,7 +1497,6 @@ public final class PacketOpcodes {
     public static final int HideAndSeekSetReadyReq = 39924183;     //4.0.0
     public static final int HideAndSeekSetReadyRsp = 39927329;     //4.0.0
     public static final int HideAndSeekSettleNotify = 39921206;     //4.0.0
-    public static final int HitTreeNotify = 3998766;     //4.0.0
     public static final int HomeAvatarAllFinishRewardNotify = 3999497;     //4.0.0
     public static final int HomeAvatarCostumeChangeNotify = 39928208;     //4.0.0
     public static final int HomeAvatarRewardEventGetReq = 39926566;     //4.0.0
@@ -1940,8 +1985,6 @@ public final class PacketOpcodes {
     public static final int PersonalLineAllDataReq = 3999323;     //4.0.0
     public static final int PersonalLineAllDataRsp = 39920607;     //4.0.0
     public static final int PersonalLineNewUnlockNotify = 3998744;     //4.0.0
-    public static final int PersonalSceneJumpReq = 39920938;     //4.0.0
-    public static final int PersonalSceneJumpRsp = 39926151;     //4.0.0
     public static final int PhotoActivityClientViewReq = 39921878;     //4.0.0
     public static final int PhotoActivityClientViewRsp = 39920737;     //4.0.0
     public static final int PhotoActivityFinishReq = 39926014;     //4.0.0
@@ -1976,12 +2019,6 @@ public final class PacketOpcodes {
     public static final int PlayerApplyEnterHomeResultReq = 39920101;     //4.0.0
     public static final int PlayerApplyEnterHomeResultRsp = 3995358;     //4.0.0
     public static final int PlayerApplyEnterMpAfterMatchAgreedNotify = 3999475;     //4.0.0
-    public static final int PlayerApplyEnterMpNotify = 3995296;     //4.0.0
-    public static final int PlayerApplyEnterMpReq = 3999629;     //4.0.0
-    public static final int PlayerApplyEnterMpResultNotify = 3993467;     //4.0.0
-    public static final int PlayerApplyEnterMpResultReq = 39924849;     //4.0.0
-    public static final int PlayerApplyEnterMpResultRsp = 3996395;     //4.0.0
-    public static final int PlayerApplyEnterMpRsp = 39920994;     //4.0.0
     public static final int PlayerCancelMatchReq = 3999117;     //4.0.0
     public static final int PlayerCancelMatchRsp = 3994875;     //4.0.0
     public static final int PlayerChatCDNotify = 39926350;     //4.0.0
@@ -2004,8 +2041,6 @@ public final class PacketOpcodes {
     public static final int PlayerGameTimeByLuaNotify = 3993419;     //4.0.0
     public static final int PlayerGeneralMatchConfirmNotify = 3991380;     //4.0.0
     public static final int PlayerGeneralMatchDismissNotify = 3992964;     //4.0.0
-    public static final int PlayerGetForceQuitBanInfoReq = 39924478;     //4.0.0
-    public static final int PlayerGetForceQuitBanInfoRsp = 3998368;     //4.0.0
     public static final int PlayerInjectFixNotify = 39927662;     //4.0.0
     public static final int PlayerIpRegionNotify = 3991074;     //4.0.0
     public static final int PlayerLevelRewardUpdateNotify = 3993756;     //4.0.0
@@ -2064,7 +2099,6 @@ public final class PacketOpcodes {
     public static final int QueryPathRsp = 3992319;     //4.0.0
     public static final int QuestCreateEntityReq = 3998019;     //4.0.0
     public static final int QuestCreateEntityRsp = 3994869;     //4.0.0
-    public static final int QuestDelNotify = 39929185;     //4.0.0
     public static final int QuestDestroyEntityReq = 39921308;     //4.0.0
     public static final int QuestDestroyEntityRsp = 3999130;     //4.0.0
     public static final int QuickOpenActivityReq = 3993073;     //4.0.0
@@ -2200,7 +2234,6 @@ public final class PacketOpcodes {
     public static final int SceneGalleryInfoNotify = 3995587;     //4.0.0
     public static final int SceneGalleryVintageHuntingSettleNotify = 3995258;     //4.0.0
     public static final int SceneKickPlayerNotify = 39928326;     //4.0.0
-    public static final int SceneKickPlayerReq = 39929095;     //4.0.0
     public static final int SceneKickPlayerRsp = 39927200;     //4.0.0
     public static final int ScenePlayBattleInfoListNotify = 39920081;     //4.0.0
     public static final int ScenePlayBattleInfoNotify = 3991543;     //4.0.0
@@ -2251,7 +2284,6 @@ public final class PacketOpcodes {
     public static final int ServerAnnounceRevokeNotify = 39923231;     //4.0.0
     public static final int ServerCombatEndNotify = 3995895;     //4.0.0
     public static final int ServerCondMeetQuestListUpdateNotify = 39929009;     //4.0.0
-    public static final int ServerDisconnectClientNotify = 39922635;     //4.0.0
     public static final int ServerLogNotify = 3997350;     //4.0.0
     public static final int ServerMessageNotify = 39920880;     //4.0.0
     public static final int ServerTryCancelGeneralMatchNotify = 3997158;     //4.0.0
@@ -2445,7 +2477,6 @@ public final class PacketOpcodes {
     public static final int TryInterruptRogueDiaryDungeonReq = 39923223;     //4.0.0
     public static final int TryInterruptRogueDiaryDungeonRsp = 3994919;     //4.0.0
     public static final int UgcNotify = 39924435;     //4.0.0
-    public static final int UnfreezeGroupLimitNotify = 39923739;     //4.0.0
     public static final int UnlockCoopChapterReq = 39927931;     //4.0.0
     public static final int UnlockCoopChapterRsp = 3993122;     //4.0.0
     public static final int UnlockNameCardNotify = 3993896;     //4.0.0
@@ -2509,8 +2540,6 @@ public final class PacketOpcodes {
     public static final int WatcherAllDataNotify = 3991850;     //4.0.0
     public static final int WatcherChangeNotify = 39926993;     //4.0.0
     public static final int WaterSpritePhaseFinishNotify = 39922107;     //4.0.0
-    public static final int WeaponAwakenReq = 39923146;     //4.0.0
-    public static final int WeaponAwakenRsp = 39926318;     //4.0.0
     public static final int WidgetActiveChangeNotify = 39922991;     //4.0.0
     public static final int WidgetCaptureAnimalReq = 3991304;     //4.0.0
     public static final int WidgetCaptureAnimalRsp = 39923199;     //4.0.0
@@ -2564,10 +2593,7 @@ public final class PacketOpcodes {
     public static final int WorldOwnerBlossomBriefInfoNotify = 3992494;     //4.0.0
     public static final int WorldOwnerBlossomScheduleInfoNotify = 3997500;     //4.0.0
     public static final int WorldOwnerDailyTaskNotify = 3999896;     //4.0.0
-    public static final int WorldPlayerLocationNotify = 3997085;     //4.0.0
     public static final int WorldPlayerRTTNotify = 399421;     //4.0.0
-    public static final int WorldPlayerReviveReq = 3992639;     //4.0.0
-    public static final int WorldPlayerReviveRsp = 3993657;     //4.0.0
     public static final int WorldRoutineChangeNotify = 3991471;     //4.0.0
     public static final int WorldRoutineTypeCloseNotify = 3994128;     //4.0.0
     public static final int WorldRoutineTypeRefreshNotify = 39926687;    //4.0.0

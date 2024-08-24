@@ -19,19 +19,27 @@ public final class GetWorldMpInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_in_mp_mode = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>bool is_in_mp_mode = 5;</code>
      * @return The isInMpMode.
      */
     boolean getIsInMpMode();
 
     /**
-     * <code>uint32 quit_mp_valid_time = 1;</code>
+     * <pre>
+     * 1
+     * </pre>
+     *
+     * <code>uint32 quit_mp_valid_time = 10;</code>
      * @return The quitMpValidTime.
      */
     int getQuitMpValidTime();
@@ -86,19 +94,19 @@ public final class GetWorldMpInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              quitMpValidTime_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 40: {
 
               isInMpMode_ = input.readBool();
               break;
             }
-            case 72: {
+            case 56: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 80: {
+
+              quitMpValidTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +141,10 @@ public final class GetWorldMpInfoRspOuterClass {
               emu.grasscutter.net.proto.GetWorldMpInfoRspOuterClass.GetWorldMpInfoRsp.class, emu.grasscutter.net.proto.GetWorldMpInfoRspOuterClass.GetWorldMpInfoRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -144,10 +152,14 @@ public final class GetWorldMpInfoRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_IN_MP_MODE_FIELD_NUMBER = 4;
+    public static final int IS_IN_MP_MODE_FIELD_NUMBER = 5;
     private boolean isInMpMode_;
     /**
-     * <code>bool is_in_mp_mode = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>bool is_in_mp_mode = 5;</code>
      * @return The isInMpMode.
      */
     @java.lang.Override
@@ -155,10 +167,14 @@ public final class GetWorldMpInfoRspOuterClass {
       return isInMpMode_;
     }
 
-    public static final int QUIT_MP_VALID_TIME_FIELD_NUMBER = 1;
+    public static final int QUIT_MP_VALID_TIME_FIELD_NUMBER = 10;
     private int quitMpValidTime_;
     /**
-     * <code>uint32 quit_mp_valid_time = 1;</code>
+     * <pre>
+     * 1
+     * </pre>
+     *
+     * <code>uint32 quit_mp_valid_time = 10;</code>
      * @return The quitMpValidTime.
      */
     @java.lang.Override
@@ -180,14 +196,14 @@ public final class GetWorldMpInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (quitMpValidTime_ != 0) {
-        output.writeUInt32(1, quitMpValidTime_);
-      }
       if (isInMpMode_ != false) {
-        output.writeBool(4, isInMpMode_);
+        output.writeBool(5, isInMpMode_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(7, retcode_);
+      }
+      if (quitMpValidTime_ != 0) {
+        output.writeUInt32(10, quitMpValidTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +214,17 @@ public final class GetWorldMpInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (quitMpValidTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, quitMpValidTime_);
-      }
       if (isInMpMode_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isInMpMode_);
+          .computeBoolSize(5, isInMpMode_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(7, retcode_);
+      }
+      if (quitMpValidTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, quitMpValidTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -510,7 +526,7 @@ public final class GetWorldMpInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -518,7 +534,7 @@ public final class GetWorldMpInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -529,7 +545,7 @@ public final class GetWorldMpInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -541,7 +557,11 @@ public final class GetWorldMpInfoRspOuterClass {
 
       private boolean isInMpMode_ ;
       /**
-       * <code>bool is_in_mp_mode = 4;</code>
+       * <pre>
+       * 4
+       * </pre>
+       *
+       * <code>bool is_in_mp_mode = 5;</code>
        * @return The isInMpMode.
        */
       @java.lang.Override
@@ -549,7 +569,11 @@ public final class GetWorldMpInfoRspOuterClass {
         return isInMpMode_;
       }
       /**
-       * <code>bool is_in_mp_mode = 4;</code>
+       * <pre>
+       * 4
+       * </pre>
+       *
+       * <code>bool is_in_mp_mode = 5;</code>
        * @param value The isInMpMode to set.
        * @return This builder for chaining.
        */
@@ -560,7 +584,11 @@ public final class GetWorldMpInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_in_mp_mode = 4;</code>
+       * <pre>
+       * 4
+       * </pre>
+       *
+       * <code>bool is_in_mp_mode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsInMpMode() {
@@ -572,7 +600,11 @@ public final class GetWorldMpInfoRspOuterClass {
 
       private int quitMpValidTime_ ;
       /**
-       * <code>uint32 quit_mp_valid_time = 1;</code>
+       * <pre>
+       * 1
+       * </pre>
+       *
+       * <code>uint32 quit_mp_valid_time = 10;</code>
        * @return The quitMpValidTime.
        */
       @java.lang.Override
@@ -580,7 +612,11 @@ public final class GetWorldMpInfoRspOuterClass {
         return quitMpValidTime_;
       }
       /**
-       * <code>uint32 quit_mp_valid_time = 1;</code>
+       * <pre>
+       * 1
+       * </pre>
+       *
+       * <code>uint32 quit_mp_valid_time = 10;</code>
        * @param value The quitMpValidTime to set.
        * @return This builder for chaining.
        */
@@ -591,7 +627,11 @@ public final class GetWorldMpInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quit_mp_valid_time = 1;</code>
+       * <pre>
+       * 1
+       * </pre>
+       *
+       * <code>uint32 quit_mp_valid_time = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuitMpValidTime() {
@@ -668,8 +708,8 @@ public final class GetWorldMpInfoRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GetWorldMpInfoRsp.proto\"W\n\021GetWorldMpI" +
-      "nfoRsp\022\017\n\007retcode\030\t \001(\005\022\025\n\ris_in_mp_mode" +
-      "\030\004 \001(\010\022\032\n\022quit_mp_valid_time\030\001 \001(\rB\033\n\031em" +
+      "nfoRsp\022\017\n\007retcode\030\007 \001(\005\022\025\n\ris_in_mp_mode" +
+      "\030\005 \001(\010\022\032\n\022quit_mp_valid_time\030\n \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

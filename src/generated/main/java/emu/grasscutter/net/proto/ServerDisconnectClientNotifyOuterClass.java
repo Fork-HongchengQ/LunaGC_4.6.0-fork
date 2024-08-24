@@ -19,15 +19,16 @@ public final class ServerDisconnectClientNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 data = 13;</code>
+     * <code>uint32 data = 15;</code>
      * @return The data.
      */
     int getData();
   }
   /**
    * <pre>
-   * CmdId: 22635
-   * Obf: HEHEEJKLCGH
+   * CmdId: 28929
+   * 4.6.0
+   * obf: PLIAHMOKHOI
    * </pre>
    *
    * Protobuf type {@code ServerDisconnectClientNotify}
@@ -44,14 +45,14 @@ public final class ServerDisconnectClientNotifyOuterClass {
     private ServerDisconnectClientNotify() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new ServerDisconnectClientNotify();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -62,7 +63,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -74,7 +75,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 120: {
 
               data_ = input.readUInt32();
               break;
@@ -100,30 +101,30 @@ public final class ServerDisconnectClientNotifyOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_descriptor;
+      return ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_fieldAccessorTable
+      return ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.class, emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.Builder.class);
+              ServerDisconnectClientNotify.class, Builder.class);
     }
 
-    public static final int DATA_FIELD_NUMBER = 13;
+    public static final int DATA_FIELD_NUMBER = 15;
     private int data_;
     /**
-     * <code>uint32 data = 13;</code>
+     * <code>uint32 data = 15;</code>
      * @return The data.
      */
-    @java.lang.Override
+    @Override
     public int getData() {
       return data_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -133,16 +134,16 @@ public final class ServerDisconnectClientNotifyOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (data_ != 0) {
-        output.writeUInt32(13, data_);
+        output.writeUInt32(15, data_);
       }
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -150,22 +151,22 @@ public final class ServerDisconnectClientNotifyOuterClass {
       size = 0;
       if (data_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, data_);
+          .computeUInt32Size(15, data_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify)) {
+      if (!(obj instanceof ServerDisconnectClientNotify)) {
         return super.equals(obj);
       }
-      emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify other = (emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify) obj;
+      ServerDisconnectClientNotify other = (ServerDisconnectClientNotify) obj;
 
       if (getData()
           != other.getData()) return false;
@@ -173,7 +174,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -187,69 +188,69 @@ public final class ServerDisconnectClientNotifyOuterClass {
       return hash;
     }
 
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(
+    public static ServerDisconnectClientNotify parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(
+    public static ServerDisconnectClientNotify parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(
+    public static ServerDisconnectClientNotify parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(
+    public static ServerDisconnectClientNotify parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(byte[] data)
+    public static ServerDisconnectClientNotify parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(
+    public static ServerDisconnectClientNotify parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(java.io.InputStream input)
+    public static ServerDisconnectClientNotify parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(
+    public static ServerDisconnectClientNotify parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseDelimitedFrom(java.io.InputStream input)
+    public static ServerDisconnectClientNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseDelimitedFrom(
+    public static ServerDisconnectClientNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(
+    public static ServerDisconnectClientNotify parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parseFrom(
+    public static ServerDisconnectClientNotify parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -257,30 +258,31 @@ public final class ServerDisconnectClientNotifyOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify prototype) {
+    public static Builder newBuilder(ServerDisconnectClientNotify prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
     /**
      * <pre>
-     * CmdId: 22635
-     * Obf: HEHEEJKLCGH
+     * CmdId: 28929
+     * 4.6.0
+     * obf: PLIAHMOKHOI
      * </pre>
      *
      * Protobuf type {@code ServerDisconnectClientNotify}
@@ -288,18 +290,18 @@ public final class ServerDisconnectClientNotifyOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ServerDisconnectClientNotify)
-        emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotifyOrBuilder {
+        ServerDisconnectClientNotifyOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_descriptor;
+        return ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_fieldAccessorTable
+        return ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.class, emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.Builder.class);
+                ServerDisconnectClientNotify.class, Builder.class);
       }
 
       // Construct using emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.newBuilder()
@@ -308,7 +310,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -317,7 +319,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         data_ = 0;
@@ -325,78 +327,78 @@ public final class ServerDisconnectClientNotifyOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_descriptor;
+        return ServerDisconnectClientNotifyOuterClass.internal_static_ServerDisconnectClientNotify_descriptor;
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify getDefaultInstanceForType() {
-        return emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.getDefaultInstance();
+      @Override
+      public ServerDisconnectClientNotify getDefaultInstanceForType() {
+        return ServerDisconnectClientNotify.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify build() {
-        emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify result = buildPartial();
+      @Override
+      public ServerDisconnectClientNotify build() {
+        ServerDisconnectClientNotify result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify buildPartial() {
-        emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify result = new emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify(this);
+      @Override
+      public ServerDisconnectClientNotify buildPartial() {
+        ServerDisconnectClientNotify result = new ServerDisconnectClientNotify(this);
         result.data_ = data_;
         onBuilt();
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify) {
-          return mergeFrom((emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify)other);
+        if (other instanceof ServerDisconnectClientNotify) {
+          return mergeFrom((ServerDisconnectClientNotify)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify other) {
-        if (other == emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.getDefaultInstance()) return this;
+      public Builder mergeFrom(ServerDisconnectClientNotify other) {
+        if (other == ServerDisconnectClientNotify.getDefaultInstance()) return this;
         if (other.getData() != 0) {
           setData(other.getData());
         }
@@ -405,21 +407,21 @@ public final class ServerDisconnectClientNotifyOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify parsedMessage = null;
+        ServerDisconnectClientNotify parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify) e.getUnfinishedMessage();
+          parsedMessage = (ServerDisconnectClientNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -431,41 +433,41 @@ public final class ServerDisconnectClientNotifyOuterClass {
 
       private int data_ ;
       /**
-       * <code>uint32 data = 13;</code>
+       * <code>uint32 data = 15;</code>
        * @return The data.
        */
-      @java.lang.Override
+      @Override
       public int getData() {
         return data_;
       }
       /**
-       * <code>uint32 data = 13;</code>
+       * <code>uint32 data = 15;</code>
        * @param value The data to set.
        * @return This builder for chaining.
        */
       public Builder setData(int value) {
-        
+
         data_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 data = 13;</code>
+       * <code>uint32 data = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearData() {
-        
+
         data_ = 0;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -476,18 +478,18 @@ public final class ServerDisconnectClientNotifyOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:ServerDisconnectClientNotify)
-    private static final emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify DEFAULT_INSTANCE;
+    private static final ServerDisconnectClientNotify DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify();
+      DEFAULT_INSTANCE = new ServerDisconnectClientNotify();
     }
 
-    public static emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify getDefaultInstance() {
+    public static ServerDisconnectClientNotify getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ServerDisconnectClientNotify>
         PARSER = new com.google.protobuf.AbstractParser<ServerDisconnectClientNotify>() {
-      @java.lang.Override
+      @Override
       public ServerDisconnectClientNotify parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -500,13 +502,13 @@ public final class ServerDisconnectClientNotifyOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<ServerDisconnectClientNotify> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify getDefaultInstanceForType() {
+    @Override
+    public ServerDisconnectClientNotify getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -514,7 +516,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_ServerDisconnectClientNotify_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ServerDisconnectClientNotify_fieldAccessorTable;
 
@@ -525,9 +527,9 @@ public final class ServerDisconnectClientNotifyOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\"ServerDisconnectClientNotify.proto\",\n\034" +
-      "ServerDisconnectClientNotify\022\014\n\004data\030\r \001" +
+      "ServerDisconnectClientNotify\022\014\n\004data\030\017 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -539,7 +541,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
     internal_static_ServerDisconnectClientNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ServerDisconnectClientNotify_descriptor,
-        new java.lang.String[] { "Data", });
+        new String[] { "Data", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

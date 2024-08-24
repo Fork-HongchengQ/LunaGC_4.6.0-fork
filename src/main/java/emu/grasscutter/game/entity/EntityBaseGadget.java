@@ -84,7 +84,7 @@ public abstract class EntityBaseGadget extends GameEntity {
         var combatData = configGadget.getCombat();
         var combatProperties = combatData.getProperty();
 
-        var targetHp = combatProperties.getHP();
+        var targetHp = combatProperties.getHp();
         setFightProperty(FightProperty.FIGHT_PROP_MAX_HP, targetHp);
         setFightProperty(FightProperty.FIGHT_PROP_BASE_HP, targetHp);
         if (combatProperties.isInvincible()) {

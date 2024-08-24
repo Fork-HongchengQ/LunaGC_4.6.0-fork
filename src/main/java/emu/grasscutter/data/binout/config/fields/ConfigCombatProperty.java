@@ -6,7 +6,7 @@ import lombok.experimental.FieldDefaults;
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ConfigCombatProperty {
-    float HP;
+    float hp;
     boolean isLockHP;
     boolean isInvincible;
     boolean isGhostToAllied;

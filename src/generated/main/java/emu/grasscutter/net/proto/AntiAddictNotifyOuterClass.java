@@ -19,30 +19,30 @@ public final class AntiAddictNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string level = 7;</code>
+     * <code>string level = 3;</code>
      * @return The level.
      */
-    java.lang.String getLevel();
+    String getLevel();
     /**
-     * <code>string level = 7;</code>
+     * <code>string level = 3;</code>
      * @return The bytes for level.
      */
     com.google.protobuf.ByteString
         getLevelBytes();
 
     /**
-     * <code>int32 msg_type = 6;</code>
+     * <code>int32 msg_type = 8;</code>
      * @return The msgType.
      */
     int getMsgType();
 
     /**
-     * <code>string msg = 12;</code>
+     * <code>string msg = 10;</code>
      * @return The msg.
      */
-    java.lang.String getMsg();
+    String getMsg();
     /**
-     * <code>string msg = 12;</code>
+     * <code>string msg = 10;</code>
      * @return The bytes for msg.
      */
     com.google.protobuf.ByteString
@@ -50,8 +50,8 @@ public final class AntiAddictNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 23699
-   * Obf: EOHKJFLKHHF
+   * Obf: ONJGFGPAOLE
+   * cddid: 2448
    * </pre>
    *
    * Protobuf type {@code AntiAddictNotify}
@@ -70,14 +70,14 @@ public final class AntiAddictNotifyOuterClass {
       msg_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new AntiAddictNotify();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -88,7 +88,7 @@ public final class AntiAddictNotifyOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -100,19 +100,19 @@ public final class AntiAddictNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              msgType_ = input.readInt32();
-              break;
-            }
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 26: {
+              String s = input.readStringRequireUtf8();
 
               level_ = s;
               break;
             }
-            case 98: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 64: {
+
+              msgType_ = input.readInt32();
+              break;
+            }
+            case 82: {
+              String s = input.readStringRequireUtf8();
 
               msg_ = s;
               break;
@@ -138,48 +138,48 @@ public final class AntiAddictNotifyOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_descriptor;
+      return AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_fieldAccessorTable
+      return AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.class, emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.Builder.class);
+              AntiAddictNotify.class, Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 7;
-    private volatile java.lang.Object level_;
+    public static final int LEVEL_FIELD_NUMBER = 3;
+    private volatile Object level_;
     /**
-     * <code>string level = 7;</code>
+     * <code>string level = 3;</code>
      * @return The level.
      */
-    @java.lang.Override
-    public java.lang.String getLevel() {
-      java.lang.Object ref = level_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getLevel() {
+      Object ref = level_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         level_ = s;
         return s;
       }
     }
     /**
-     * <code>string level = 7;</code>
+     * <code>string level = 3;</code>
      * @return The bytes for level.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getLevelBytes() {
-      java.lang.Object ref = level_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+      Object ref = level_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         level_ = b;
         return b;
       } else {
@@ -187,48 +187,48 @@ public final class AntiAddictNotifyOuterClass {
       }
     }
 
-    public static final int MSG_TYPE_FIELD_NUMBER = 6;
+    public static final int MSG_TYPE_FIELD_NUMBER = 8;
     private int msgType_;
     /**
-     * <code>int32 msg_type = 6;</code>
+     * <code>int32 msg_type = 8;</code>
      * @return The msgType.
      */
-    @java.lang.Override
+    @Override
     public int getMsgType() {
       return msgType_;
     }
 
-    public static final int MSG_FIELD_NUMBER = 12;
-    private volatile java.lang.Object msg_;
+    public static final int MSG_FIELD_NUMBER = 10;
+    private volatile Object msg_;
     /**
-     * <code>string msg = 12;</code>
+     * <code>string msg = 10;</code>
      * @return The msg.
      */
-    @java.lang.Override
-    public java.lang.String getMsg() {
-      java.lang.Object ref = msg_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getMsg() {
+      Object ref = msg_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         msg_ = s;
         return s;
       }
     }
     /**
-     * <code>string msg = 12;</code>
+     * <code>string msg = 10;</code>
      * @return The bytes for msg.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getMsgBytes() {
-      java.lang.Object ref = msg_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+      Object ref = msg_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         msg_ = b;
         return b;
       } else {
@@ -237,7 +237,7 @@ public final class AntiAddictNotifyOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -247,51 +247,51 @@ public final class AntiAddictNotifyOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (msgType_ != 0) {
-        output.writeInt32(6, msgType_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(level_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, level_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, level_);
+      }
+      if (msgType_ != 0) {
+        output.writeInt32(8, msgType_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(msg_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, msg_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, msg_);
       }
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
 
       size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(level_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, level_);
+      }
       if (msgType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, msgType_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(level_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, level_);
+          .computeInt32Size(8, msgType_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(msg_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, msg_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, msg_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify)) {
+      if (!(obj instanceof AntiAddictNotify)) {
         return super.equals(obj);
       }
-      emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify other = (emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify) obj;
+      AntiAddictNotify other = (AntiAddictNotify) obj;
 
       if (!getLevel()
           .equals(other.getLevel())) return false;
@@ -303,7 +303,7 @@ public final class AntiAddictNotifyOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -321,69 +321,69 @@ public final class AntiAddictNotifyOuterClass {
       return hash;
     }
 
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(
+    public static AntiAddictNotify parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(
+    public static AntiAddictNotify parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(
+    public static AntiAddictNotify parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(
+    public static AntiAddictNotify parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(byte[] data)
+    public static AntiAddictNotify parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(
+    public static AntiAddictNotify parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(java.io.InputStream input)
+    public static AntiAddictNotify parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(
+    public static AntiAddictNotify parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseDelimitedFrom(java.io.InputStream input)
+    public static AntiAddictNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseDelimitedFrom(
+    public static AntiAddictNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(
+    public static AntiAddictNotify parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parseFrom(
+    public static AntiAddictNotify parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -391,30 +391,30 @@ public final class AntiAddictNotifyOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify prototype) {
+    public static Builder newBuilder(AntiAddictNotify prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
     /**
      * <pre>
-     * CmdId: 23699
-     * Obf: EOHKJFLKHHF
+     * Obf: ONJGFGPAOLE
+     * cddid: 2448
      * </pre>
      *
      * Protobuf type {@code AntiAddictNotify}
@@ -422,18 +422,18 @@ public final class AntiAddictNotifyOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:AntiAddictNotify)
-        emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotifyOrBuilder {
+        AntiAddictNotifyOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_descriptor;
+        return AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_fieldAccessorTable
+        return AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.class, emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.Builder.class);
+                AntiAddictNotify.class, Builder.class);
       }
 
       // Construct using emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.newBuilder()
@@ -442,7 +442,7 @@ public final class AntiAddictNotifyOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -451,7 +451,7 @@ public final class AntiAddictNotifyOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         level_ = "";
@@ -463,29 +463,29 @@ public final class AntiAddictNotifyOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_descriptor;
+        return AntiAddictNotifyOuterClass.internal_static_AntiAddictNotify_descriptor;
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify getDefaultInstanceForType() {
-        return emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.getDefaultInstance();
+      @Override
+      public AntiAddictNotify getDefaultInstanceForType() {
+        return AntiAddictNotify.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify build() {
-        emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify result = buildPartial();
+      @Override
+      public AntiAddictNotify build() {
+        AntiAddictNotify result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify buildPartial() {
-        emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify result = new emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify(this);
+      @Override
+      public AntiAddictNotify buildPartial() {
+        AntiAddictNotify result = new AntiAddictNotify(this);
         result.level_ = level_;
         result.msgType_ = msgType_;
         result.msg_ = msg_;
@@ -493,50 +493,50 @@ public final class AntiAddictNotifyOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify) {
-          return mergeFrom((emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify)other);
+        if (other instanceof AntiAddictNotify) {
+          return mergeFrom((AntiAddictNotify)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify other) {
-        if (other == emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify.getDefaultInstance()) return this;
+      public Builder mergeFrom(AntiAddictNotify other) {
+        if (other == AntiAddictNotify.getDefaultInstance()) return this;
         if (!other.getLevel().isEmpty()) {
           level_ = other.level_;
           onChanged();
@@ -553,21 +553,21 @@ public final class AntiAddictNotifyOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify parsedMessage = null;
+        AntiAddictNotify parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify) e.getUnfinishedMessage();
+          parsedMessage = (AntiAddictNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -577,34 +577,34 @@ public final class AntiAddictNotifyOuterClass {
         return this;
       }
 
-      private java.lang.Object level_ = "";
+      private Object level_ = "";
       /**
-       * <code>string level = 7;</code>
+       * <code>string level = 3;</code>
        * @return The level.
        */
-      public java.lang.String getLevel() {
-        java.lang.Object ref = level_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getLevel() {
+        Object ref = level_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           level_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
-       * <code>string level = 7;</code>
+       * <code>string level = 3;</code>
        * @return The bytes for level.
        */
       public com.google.protobuf.ByteString
           getLevelBytes() {
-        java.lang.Object ref = level_;
+        Object ref = level_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           level_ = b;
           return b;
         } else {
@@ -612,32 +612,32 @@ public final class AntiAddictNotifyOuterClass {
         }
       }
       /**
-       * <code>string level = 7;</code>
+       * <code>string level = 3;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
       public Builder setLevel(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         level_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string level = 7;</code>
+       * <code>string level = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
-        
+
         level_ = getDefaultInstance().getLevel();
         onChanged();
         return this;
       }
       /**
-       * <code>string level = 7;</code>
+       * <code>string level = 3;</code>
        * @param value The bytes for level to set.
        * @return This builder for chaining.
        */
@@ -647,7 +647,7 @@ public final class AntiAddictNotifyOuterClass {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         level_ = value;
         onChanged();
         return this;
@@ -655,63 +655,63 @@ public final class AntiAddictNotifyOuterClass {
 
       private int msgType_ ;
       /**
-       * <code>int32 msg_type = 6;</code>
+       * <code>int32 msg_type = 8;</code>
        * @return The msgType.
        */
-      @java.lang.Override
+      @Override
       public int getMsgType() {
         return msgType_;
       }
       /**
-       * <code>int32 msg_type = 6;</code>
+       * <code>int32 msg_type = 8;</code>
        * @param value The msgType to set.
        * @return This builder for chaining.
        */
       public Builder setMsgType(int value) {
-        
+
         msgType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 msg_type = 6;</code>
+       * <code>int32 msg_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMsgType() {
-        
+
         msgType_ = 0;
         onChanged();
         return this;
       }
 
-      private java.lang.Object msg_ = "";
+      private Object msg_ = "";
       /**
-       * <code>string msg = 12;</code>
+       * <code>string msg = 10;</code>
        * @return The msg.
        */
-      public java.lang.String getMsg() {
-        java.lang.Object ref = msg_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMsg() {
+        Object ref = msg_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           msg_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
-       * <code>string msg = 12;</code>
+       * <code>string msg = 10;</code>
        * @return The bytes for msg.
        */
       public com.google.protobuf.ByteString
           getMsgBytes() {
-        java.lang.Object ref = msg_;
+        Object ref = msg_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           msg_ = b;
           return b;
         } else {
@@ -719,32 +719,32 @@ public final class AntiAddictNotifyOuterClass {
         }
       }
       /**
-       * <code>string msg = 12;</code>
+       * <code>string msg = 10;</code>
        * @param value The msg to set.
        * @return This builder for chaining.
        */
       public Builder setMsg(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         msg_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string msg = 12;</code>
+       * <code>string msg = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearMsg() {
-        
+
         msg_ = getDefaultInstance().getMsg();
         onChanged();
         return this;
       }
       /**
-       * <code>string msg = 12;</code>
+       * <code>string msg = 10;</code>
        * @param value The bytes for msg to set.
        * @return This builder for chaining.
        */
@@ -754,18 +754,18 @@ public final class AntiAddictNotifyOuterClass {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         msg_ = value;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -776,18 +776,18 @@ public final class AntiAddictNotifyOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:AntiAddictNotify)
-    private static final emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify DEFAULT_INSTANCE;
+    private static final AntiAddictNotify DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify();
+      DEFAULT_INSTANCE = new AntiAddictNotify();
     }
 
-    public static emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify getDefaultInstance() {
+    public static AntiAddictNotify getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<AntiAddictNotify>
         PARSER = new com.google.protobuf.AbstractParser<AntiAddictNotify>() {
-      @java.lang.Override
+      @Override
       public AntiAddictNotify parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -800,13 +800,13 @@ public final class AntiAddictNotifyOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<AntiAddictNotify> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AntiAddictNotifyOuterClass.AntiAddictNotify getDefaultInstanceForType() {
+    @Override
+    public AntiAddictNotify getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -814,7 +814,7 @@ public final class AntiAddictNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AntiAddictNotify_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AntiAddictNotify_fieldAccessorTable;
 
@@ -825,10 +825,10 @@ public final class AntiAddictNotifyOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\026AntiAddictNotify.proto\"@\n\020AntiAddictNo" +
-      "tify\022\r\n\005level\030\007 \001(\t\022\020\n\010msg_type\030\006 \001(\005\022\013\n" +
-      "\003msg\030\014 \001(\tB\033\n\031emu.grasscutter.net.protob" +
+      "tify\022\r\n\005level\030\003 \001(\t\022\020\n\010msg_type\030\010 \001(\005\022\013\n" +
+      "\003msg\030\n \001(\tB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -840,7 +840,7 @@ public final class AntiAddictNotifyOuterClass {
     internal_static_AntiAddictNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AntiAddictNotify_descriptor,
-        new java.lang.String[] { "Level", "MsgType", "Msg", });
+        new String[] { "Level", "MsgType", "Msg", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

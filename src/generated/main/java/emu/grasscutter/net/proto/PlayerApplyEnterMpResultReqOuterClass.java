@@ -32,8 +32,9 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 24849
-   * Obf: DCHAHENHFKC
+   * CmdId: 25379
+   * 4.6.0
+   * obf: PlayerApplyEnterMpResultReq
    * </pre>
    *
    * Protobuf type {@code PlayerApplyEnterMpResultReq}
@@ -50,14 +51,14 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
     private PlayerApplyEnterMpResultReq() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new PlayerApplyEnterMpResultReq();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -68,7 +69,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -111,15 +112,15 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_descriptor;
+      return PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_fieldAccessorTable
+      return PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.class, emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.Builder.class);
+              PlayerApplyEnterMpResultReq.class, Builder.class);
     }
 
     public static final int APPLY_UID_FIELD_NUMBER = 11;
@@ -128,7 +129,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
      * <code>uint32 apply_uid = 11;</code>
      * @return The applyUid.
      */
-    @java.lang.Override
+    @Override
     public int getApplyUid() {
       return applyUid_;
     }
@@ -139,13 +140,13 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
      * <code>bool is_agreed = 12;</code>
      * @return The isAgreed.
      */
-    @java.lang.Override
+    @Override
     public boolean getIsAgreed() {
       return isAgreed_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -155,7 +156,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (applyUid_ != 0) {
@@ -167,7 +168,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -186,15 +187,15 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq)) {
+      if (!(obj instanceof PlayerApplyEnterMpResultReq)) {
         return super.equals(obj);
       }
-      emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq other = (emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq) obj;
+      PlayerApplyEnterMpResultReq other = (PlayerApplyEnterMpResultReq) obj;
 
       if (getApplyUid()
           != other.getApplyUid()) return false;
@@ -204,7 +205,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -221,69 +222,69 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       return hash;
     }
 
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(
+    public static PlayerApplyEnterMpResultReq parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(
+    public static PlayerApplyEnterMpResultReq parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(
+    public static PlayerApplyEnterMpResultReq parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(
+    public static PlayerApplyEnterMpResultReq parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(byte[] data)
+    public static PlayerApplyEnterMpResultReq parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(
+    public static PlayerApplyEnterMpResultReq parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(java.io.InputStream input)
+    public static PlayerApplyEnterMpResultReq parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(
+    public static PlayerApplyEnterMpResultReq parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseDelimitedFrom(java.io.InputStream input)
+    public static PlayerApplyEnterMpResultReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseDelimitedFrom(
+    public static PlayerApplyEnterMpResultReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(
+    public static PlayerApplyEnterMpResultReq parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parseFrom(
+    public static PlayerApplyEnterMpResultReq parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -291,30 +292,31 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq prototype) {
+    public static Builder newBuilder(PlayerApplyEnterMpResultReq prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
     /**
      * <pre>
-     * CmdId: 24849
-     * Obf: DCHAHENHFKC
+     * CmdId: 25379
+     * 4.6.0
+     * obf: PlayerApplyEnterMpResultReq
      * </pre>
      *
      * Protobuf type {@code PlayerApplyEnterMpResultReq}
@@ -322,18 +324,18 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:PlayerApplyEnterMpResultReq)
-        emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReqOrBuilder {
+        PlayerApplyEnterMpResultReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_descriptor;
+        return PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_fieldAccessorTable
+        return PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.class, emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.Builder.class);
+                PlayerApplyEnterMpResultReq.class, Builder.class);
       }
 
       // Construct using emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.newBuilder()
@@ -342,7 +344,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -351,7 +353,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         applyUid_ = 0;
@@ -361,79 +363,79 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_descriptor;
+        return PlayerApplyEnterMpResultReqOuterClass.internal_static_PlayerApplyEnterMpResultReq_descriptor;
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq getDefaultInstanceForType() {
-        return emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.getDefaultInstance();
+      @Override
+      public PlayerApplyEnterMpResultReq getDefaultInstanceForType() {
+        return PlayerApplyEnterMpResultReq.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq build() {
-        emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq result = buildPartial();
+      @Override
+      public PlayerApplyEnterMpResultReq build() {
+        PlayerApplyEnterMpResultReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq buildPartial() {
-        emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq result = new emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq(this);
+      @Override
+      public PlayerApplyEnterMpResultReq buildPartial() {
+        PlayerApplyEnterMpResultReq result = new PlayerApplyEnterMpResultReq(this);
         result.applyUid_ = applyUid_;
         result.isAgreed_ = isAgreed_;
         onBuilt();
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq) {
-          return mergeFrom((emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq)other);
+        if (other instanceof PlayerApplyEnterMpResultReq) {
+          return mergeFrom((PlayerApplyEnterMpResultReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq other) {
-        if (other == emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(PlayerApplyEnterMpResultReq other) {
+        if (other == PlayerApplyEnterMpResultReq.getDefaultInstance()) return this;
         if (other.getApplyUid() != 0) {
           setApplyUid(other.getApplyUid());
         }
@@ -445,21 +447,21 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq parsedMessage = null;
+        PlayerApplyEnterMpResultReq parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq) e.getUnfinishedMessage();
+          parsedMessage = (PlayerApplyEnterMpResultReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -474,7 +476,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
        * <code>uint32 apply_uid = 11;</code>
        * @return The applyUid.
        */
-      @java.lang.Override
+      @Override
       public int getApplyUid() {
         return applyUid_;
       }
@@ -484,7 +486,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder setApplyUid(int value) {
-        
+
         applyUid_ = value;
         onChanged();
         return this;
@@ -494,7 +496,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearApplyUid() {
-        
+
         applyUid_ = 0;
         onChanged();
         return this;
@@ -505,7 +507,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
        * <code>bool is_agreed = 12;</code>
        * @return The isAgreed.
        */
-      @java.lang.Override
+      @Override
       public boolean getIsAgreed() {
         return isAgreed_;
       }
@@ -515,7 +517,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsAgreed(boolean value) {
-        
+
         isAgreed_ = value;
         onChanged();
         return this;
@@ -525,18 +527,18 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsAgreed() {
-        
+
         isAgreed_ = false;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -547,18 +549,18 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:PlayerApplyEnterMpResultReq)
-    private static final emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq DEFAULT_INSTANCE;
+    private static final PlayerApplyEnterMpResultReq DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq();
+      DEFAULT_INSTANCE = new PlayerApplyEnterMpResultReq();
     }
 
-    public static emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq getDefaultInstance() {
+    public static PlayerApplyEnterMpResultReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<PlayerApplyEnterMpResultReq>
         PARSER = new com.google.protobuf.AbstractParser<PlayerApplyEnterMpResultReq>() {
-      @java.lang.Override
+      @Override
       public PlayerApplyEnterMpResultReq parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -571,13 +573,13 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<PlayerApplyEnterMpResultReq> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq getDefaultInstanceForType() {
+    @Override
+    public PlayerApplyEnterMpResultReq getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -585,7 +587,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_PlayerApplyEnterMpResultReq_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PlayerApplyEnterMpResultReq_fieldAccessorTable;
 
@@ -596,7 +598,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n!PlayerApplyEnterMpResultReq.proto\"C\n\033P" +
       "layerApplyEnterMpResultReq\022\021\n\tapply_uid\030" +
       "\013 \001(\r\022\021\n\tis_agreed\030\014 \001(\010B\033\n\031emu.grasscut" +
@@ -611,7 +613,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
     internal_static_PlayerApplyEnterMpResultReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerApplyEnterMpResultReq_descriptor,
-        new java.lang.String[] { "ApplyUid", "IsAgreed", });
+        new String[] { "ApplyUid", "IsAgreed", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

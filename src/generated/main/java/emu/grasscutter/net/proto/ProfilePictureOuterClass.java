@@ -29,10 +29,20 @@ public final class ProfilePictureOuterClass {
      * @return The costumeId.
      */
     int getCostumeId();
+
+    /**
+     * <pre>
+     * 4.6新加入的
+     * </pre>
+     *
+     * <code>uint32 GJAHJBKEABP = 3;</code>
+     * @return The gJAHJBKEABP.
+     */
+    int getGJAHJBKEABP();
   }
   /**
    * <pre>
-   * Obf: FEKJLPEAOJI
+   * Obf: FEKJLPEAOJI // 4.0
    * </pre>
    *
    * Protobuf type {@code ProfilePicture}
@@ -89,6 +99,11 @@ public final class ProfilePictureOuterClass {
               costumeId_ = input.readUInt32();
               break;
             }
+            case 24: {
+
+              gJAHJBKEABP_ = input.readUInt32();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -143,6 +158,21 @@ public final class ProfilePictureOuterClass {
       return costumeId_;
     }
 
+    public static final int GJAHJBKEABP_FIELD_NUMBER = 3;
+    private int gJAHJBKEABP_;
+    /**
+     * <pre>
+     * 4.6新加入的
+     * </pre>
+     *
+     * <code>uint32 GJAHJBKEABP = 3;</code>
+     * @return The gJAHJBKEABP.
+     */
+    @java.lang.Override
+    public int getGJAHJBKEABP() {
+      return gJAHJBKEABP_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -163,6 +193,9 @@ public final class ProfilePictureOuterClass {
       if (costumeId_ != 0) {
         output.writeUInt32(2, costumeId_);
       }
+      if (gJAHJBKEABP_ != 0) {
+        output.writeUInt32(3, gJAHJBKEABP_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -179,6 +212,10 @@ public final class ProfilePictureOuterClass {
       if (costumeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, costumeId_);
+      }
+      if (gJAHJBKEABP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, gJAHJBKEABP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -199,6 +236,8 @@ public final class ProfilePictureOuterClass {
           != other.getAvatarId()) return false;
       if (getCostumeId()
           != other.getCostumeId()) return false;
+      if (getGJAHJBKEABP()
+          != other.getGJAHJBKEABP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -214,6 +253,8 @@ public final class ProfilePictureOuterClass {
       hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCostumeId();
+      hash = (37 * hash) + GJAHJBKEABP_FIELD_NUMBER;
+      hash = (53 * hash) + getGJAHJBKEABP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +352,7 @@ public final class ProfilePictureOuterClass {
     }
     /**
      * <pre>
-     * Obf: FEKJLPEAOJI
+     * Obf: FEKJLPEAOJI // 4.0
      * </pre>
      *
      * Protobuf type {@code ProfilePicture}
@@ -355,6 +396,8 @@ public final class ProfilePictureOuterClass {
 
         costumeId_ = 0;
 
+        gJAHJBKEABP_ = 0;
+
         return this;
       }
 
@@ -383,6 +426,7 @@ public final class ProfilePictureOuterClass {
         emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture result = new emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture(this);
         result.avatarId_ = avatarId_;
         result.costumeId_ = costumeId_;
+        result.gJAHJBKEABP_ = gJAHJBKEABP_;
         onBuilt();
         return result;
       }
@@ -436,6 +480,9 @@ public final class ProfilePictureOuterClass {
         }
         if (other.getCostumeId() != 0) {
           setCostumeId(other.getCostumeId());
+        }
+        if (other.getGJAHJBKEABP() != 0) {
+          setGJAHJBKEABP(other.getGJAHJBKEABP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -527,6 +574,49 @@ public final class ProfilePictureOuterClass {
         onChanged();
         return this;
       }
+
+      private int gJAHJBKEABP_ ;
+      /**
+       * <pre>
+       * 4.6新加入的
+       * </pre>
+       *
+       * <code>uint32 GJAHJBKEABP = 3;</code>
+       * @return The gJAHJBKEABP.
+       */
+      @java.lang.Override
+      public int getGJAHJBKEABP() {
+        return gJAHJBKEABP_;
+      }
+      /**
+       * <pre>
+       * 4.6新加入的
+       * </pre>
+       *
+       * <code>uint32 GJAHJBKEABP = 3;</code>
+       * @param value The gJAHJBKEABP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGJAHJBKEABP(int value) {
+        
+        gJAHJBKEABP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 4.6新加入的
+       * </pre>
+       *
+       * <code>uint32 GJAHJBKEABP = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGJAHJBKEABP() {
+        
+        gJAHJBKEABP_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -594,9 +684,10 @@ public final class ProfilePictureOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024ProfilePicture.proto\"7\n\016ProfilePicture" +
-      "\022\021\n\tavatar_id\030\001 \001(\r\022\022\n\ncostume_id\030\002 \001(\rB" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\024ProfilePicture.proto\"L\n\016ProfilePicture" +
+      "\022\021\n\tavatar_id\030\001 \001(\r\022\022\n\ncostume_id\030\002 \001(\r\022" +
+      "\023\n\013GJAHJBKEABP\030\003 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -607,7 +698,7 @@ public final class ProfilePictureOuterClass {
     internal_static_ProfilePicture_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ProfilePicture_descriptor,
-        new java.lang.String[] { "AvatarId", "CostumeId", });
+        new java.lang.String[] { "AvatarId", "CostumeId", "GJAHJBKEABP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
